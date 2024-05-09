@@ -1,0 +1,10 @@
+img{
+    width: 30px;
+}
+.profile{
+    display: flex;
+    justify-content: space-around;
+}
+.div{
+    display: flex;
+}
