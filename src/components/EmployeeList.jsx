@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './EmployeeList.css'
 const EmployeeList = () => {
   return (
@@ -7,6 +8,8 @@ const EmployeeList = () => {
       <strong className='employees'><p>EmployeeList</p>
       <p>Totla Count: 3 </p>
       <input type="search" name="" id="" placeholder='Search'/>
+      <button ><Link to="/CreateEmployee">Create</Link></button>
+     
       </strong><br/>
       <table>
         <thead>

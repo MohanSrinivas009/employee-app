@@ -4,7 +4,7 @@ import React,{useState} from 'react'
 const Login = () => {
     const [username, setUsername] = useState();
     const [password, setPassword] = useState();
-    const [note,setNote]=useState("Enter Username and Password");
+    const [note,setNote]=useState("Enter Email and Password");
     const [alert,setAlert]=useState("note");
     
   
@@ -27,9 +27,9 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <div className={alert} style={{display:'flex'}}>{note}</div>
           <div>
-            <label>Username:</label>
+            <label>Email:</label>
             <input
-              type="text"
+              type="email"
               value={username}
               onChange={(e) => {setUsername(e.target.value)
               console.log(e.target.value)}}
